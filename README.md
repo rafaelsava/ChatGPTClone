@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# 📱 Chat App - React Native + Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este es un proyecto de chat en tiempo real desarrollado con **React Native** y **Expo Router**, utilizando **TypeScript** y **Firebase** para la gestión de datos y autenticación, además de integración con la API de **Gemini AI** para respuestas automatizadas.
 
-## Get started
+## 🚀 Tecnologías Utilizadas
 
-1. Install dependencies
+- **React Native**: Framework para desarrollo de apps móviles.
+- **Expo Router**: Enrutamiento basado en archivos para navegación intuitiva.
+- **TypeScript**: Tipado estático para mejorar la calidad del código.
+- **Firebase**: Backend como servicio para la base de datos y autenticación.
+- **Gemini AI API**: Generación de respuestas mediante IA.
+- **React Native Reanimated**: Animaciones fluidas para UI/UX.
+- **React Native Markdown Display**: Soporte para respuestas en formato Markdown.
 
+## 📂 Estructura del Proyecto
+
+```
+/root
+│── app/                  # Directorio principal de la aplicación
+│   ├── _layout.tsx       # Layout principal
+│   ├── Chat.tsx         # Pantalla de chat principal
+│   ├── index.tsx         # Pantalla de inicio
+│   ├── Login.tsx         # Pantalla de inicio de sesión
+│   ├── Register.tsx      # Pantalla de registro
+│   ├── Sidebar.tsx       # Sidebar con chats previos
+│   ├── Welcome.tsx       # Pantalla de bienvenida
+│── assets/               # Imágenes y recursos estáticos
+│── Context/              # Gestión de estado global
+│   ├── AuthContext.tsx   # Contexto de autenticación
+│   ├── DataContext.tsx   # Contexto para manejar los chats
+│── Interfaces/           # Definición de tipos y estructuras de datos
+│   ├── interfaces.ts     # Interfaces para mensajes y chats
+│── utils/                # Funciones auxiliares
+│── .gitignore            # Archivos a ignorar en Git
+│── app.json              # Configuración de Expo
+│── package.json          # Dependencias del proyecto
+```
+
+## 🛠 Instalación y Configuración
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/rafaelsava/ChatGPTClone.git
+   cd chat-clone
+   ```
+
+2. Instalar dependencias:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Iniciar la aplicación:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## 🔥 Funcionalidades Principales
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+✅ **Chat en tiempo real** con Gemini AI.  
+✅ **Soporte Markdown** para respuestas AI.  
+✅ **Animaciones fluidas** en la UI.  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📚 Más Información
 
-## Get a fresh project
+Para más detalles sobre las tecnologías usadas, revisa la documentación oficial:
 
-When you're ready, run:
+- [Expo Router](https://expo.dev/router/introduction)
+- [Firebase](https://firebase.google.com/docs)
+- [React Native](https://reactnative.dev/)
+- [Gemini AI API](https://ai.google.dev/)
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Desarrollado por Rafael Salcedo
